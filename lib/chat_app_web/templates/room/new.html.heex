@@ -1,0 +1,8 @@
+<h2><center><i>Add New Room</i></center></h2> 
+
+<div>
+    <%= link "Home", to: Routes.room_path(@conn, :index), class: "btn btn-default" %>
+
+</div>
+<%= render "form.html", Map.put(assigns, :action, Routes.room_path(@conn, :create))%>
+

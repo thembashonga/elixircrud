@@ -1,0 +1,3 @@
+<h2><center><i>Add New Room</i></center></h2> 
+
+<%= render "form.html", Map.put(assigns, :action, Routes.room_path(@conn, :update, @room))%>
